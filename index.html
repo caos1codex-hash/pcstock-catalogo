@@ -259,13 +259,15 @@
   <script src="assets/js/cart.js"></script>
   <script>
     // Init home page
-    document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', init);
+window.addEventListener('load', init);
+function init() {
       PCS.initTheme();
       PCS.initMobileMenu();
       PCS.initCartBadge();
       PCS.loadHomeCategories();
       PCS.loadFeaturedProducts();
-    });
+    }
   </script>
 </body>
 </html>

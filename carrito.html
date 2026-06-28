@@ -137,12 +137,14 @@
   <script src="assets/js/app.js"></script>
   <script src="assets/js/cart.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', init);
+window.addEventListener('load', init);
+function init() {
       PCS.initTheme();
       PCS.initMobileMenu();
       PCS.initCartBadge();
       PCS.initCartPage();
-    });
+    }
   </script>
 </body>
 </html>
